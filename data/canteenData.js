@@ -1,0 +1,38 @@
+export const canteenItems = [
+  {
+    id: '1',
+    name: 'Crispy Chicken Fried Rice',
+    category: 'Rice & Mains',
+    price: 'LKR 450.00',
+    description: 'Freshly tossed basmati fried rice served with crispy fried chicken and chili paste.',
+    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500',
+    prepTime: '15 mins',
+  },
+  {
+    id: '2',
+    name: 'Creamy Egg Kothu',
+    category: 'Short Eats',
+    price: 'LKR 380.00',
+    description: 'Finely chopped godamba roti sautéed with fresh vegetables, eggs, and rich gravy.',
+    image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500',
+    prepTime: '12 mins',
+  },
+  {
+    id: '3',
+    name: 'Iced Milo Dinosaur',
+    category: 'Beverages',
+    price: 'LKR 250.00',
+    description: 'Chilled rich malt chocolate beverage topped with an extra heap of Milo powder.',
+    image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500',
+    prepTime: '5 mins',
+  },
+  {
+    id: '4',
+    name: 'Crispy Fish Bun & Milk Tea',
+    category: 'Short Eats',
+    price: 'LKR 180.00',
+    description: 'Warm golden-baked bun filled with spiced savory fish, paired with Ceylon milk tea.',
+    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500',
+    prepTime: '3 mins',
+  },
+];
