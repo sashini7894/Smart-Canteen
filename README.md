@@ -34,7 +34,7 @@ University: University of Kelaniya
      To run this project locally, execute the following commands in your terminal:
 
 Clone the repository
-git clone [https://github.com/your-username/smart-canteen.git](https://github.com/your-username/smart-canteen.git)
+git clone [https://github.com/sashini7894/smart-canteen.git](https://github.com/sashini7894/smart-canteen.git)
 
  Navigate to project directory
      cd smart-canteen
