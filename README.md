@@ -1,56 +1,48 @@
-# Welcome to your Expo app 👋
+Smart Canteen - Mobile Application
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Student Name:T.M.Sashini Gayathri  
+Student ID: PE/2022/019  
+Course Code: COST 32152 / COSC 32152 / BECS 3227 (Mobile Application Development)  
+University: University of Kelaniya  
 
-## Get started
+ 1. What is the application, and what problem does it solve?
+         Smart Canteen is a cross-platform mobile application designed for university students and staff to browse daily canteen menus, check food preparation times, view prices, filter meal categories (Rice, Short Eats, Beverages), and bookmark favorite items seamlessly. It solves long queue wait times by providing pre-selection, live meal details, and instant notification alerts.
 
-1. Install dependencies
+2. Screens Overview
+     * Canteen Menu Screen ('index.tsx'): Displays realistic hard-coded canteen menu items using a performant 'FlatList'. Includes a filtering Modal.
+     * Item Detail Stack Screen ('item/[id].tsx'): Shows detailed info, high-res images, pricing, and prep times for any selected item.
+     * Favorites Screen ('favorites.tsx'): Manages shared state items bookmarked by the user.
+     * Profile & AppState Screen ('profile.tsx'): Tracks student credentials and implements the React Native 'AppState' lifecycle listener.
 
-   ```bash
-   npm install
-   ```
+3. Core React Native Components Used
+    * 'View' & 'Text': Container layouts and typography styling.
+    * 'Image': Renders food illustrations via network URLs.
+    * 'Pressable': Interactive touch controls for navigation, buttons, and favoriting items.
+    * 'FlatList': High-performance scrolling list for menu items.
+    * 'Modal': Popup dialog component implemented for filtering food categories.
 
-2. Start the app
+4. Expo Router File-Based Navigation Structure
+      The app uses Expo Router file-based routing inside the `app/` directory:
+   * 'app/_layout.tsx': Root stack layout.
+   * 'app/(tabs)/_layout.tsx': Bottom tab navigator layout housing the three main tabs.
+   * 'app/item/[id].tsx': Dynamic stack route handling individual item detail parameters.
 
-   ```bash
-   npx expo start
-   ```
+5. Local Notifications Research & Implementation
+    Local notifications were implemented using 'expo-notifications'. When a user bookmarks a canteen meal item as a favorite, an immediate local notification is triggered (`expo-notifications` API) to confirm the bookmark action with a custom title and alert message.
 
-In the output, you'll find options to open the app in a
+6. Setup & Local Execution Commands
+     To run this project locally, execute the following commands in your terminal:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Clone the repository
+git clone [https://github.com/your-username/smart-canteen.git](https://github.com/your-username/smart-canteen.git)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+ Navigate to project directory
+     cd smart-canteen
 
-## Get a fresh project
+ Install dependencies
+     npm install
 
-When you're ready, run:
+ Run the project using Expo
+     npx expo start
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+7. Demonstration Video Link:  https://drive.google.com/file/d/1ywbdSfLodbZCVBQBhMb0-bSv65r_D-yh/view?usp=drivesdk
