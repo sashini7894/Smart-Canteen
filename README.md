@@ -2,7 +2,7 @@ Smart Canteen - Mobile Application
 
 Student Name:T.M.Sashini Gayathri  
 Student ID: PE/2022/019  
-Course Code: COST 32152 / COSC 32152 / BECS 3227 (Mobile Application Development)  
+Course Code: COST 32152 (Mobile Application Development)  
 University: University of Kelaniya  
 
  1. What is the application, and what problem does it solve?
